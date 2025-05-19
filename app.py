@@ -56,7 +56,7 @@ def rapport():
     pdf.output("rapport_agrikora.pdf")
     return send_file("rapport_agrikora.pdf", as_attachment=True)
     
-    if __name__ == "__main__":
-        import os
-        port = int(os.environ.get("PORT", 5000))
-        app.run(host="0.0.0.0", port=port)
+if __name__ == "__main__":
+    import os
+    port = int(os.environ.get("PORT", 5000))
+    app.run(host="0.0.0.0", port=port)
